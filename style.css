@@ -1,0 +1,45 @@
+#form {
+  display: none;
+}
+#books {
+  display: flex;
+  flex-direction: row;
+}
+.book {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 2px 4px black;
+  border-radius: 5px;
+  width: 250px;
+  margin: 20px;
+  color: black;
+  font-size: 25px;
+  background-color: white;
+  button {
+    width: 85%;
+    height: 35px;
+    margin: 10px;
+    background: none;
+  }
+  span {
+    color: rgb(59, 187, 59);
+  }
+  .book-is-read {
+    background-color: rgb(41, 161, 41);
+    border-radius: 5px;
+    &:after {
+      content: "Read";
+    }
+  }
+  .book-not-read {
+    border-radius: 5px;
+    background-color: rgb(216, 69, 69);
+    &:after {
+      content: "Not Read";
+    }
+  }
+}
+body {
+  background-color: #adb5bd;
+}
